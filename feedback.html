@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Product Feedback Form</title>
+  <link rel="stylesheet" type="text/css" href="feedback.css">
+</head>
+
+<body>
+  <div class="contents">
+    <header>
+      <h1>Product Feedback Form</h1>
+      <p>Please let us know your thoughts on our products.</p>
+    </header>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Your Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="order_number">Order Number:</label>
+        <input type="text" id="order_number" name="order_number" required>
+      </fieldset>
+      <fieldset>
+        <legend>Product Feedback</legend>
+        <label for="rating">Rating:</label>
+        <select id="rating" name="rating" required>
+          <option value="">Select a rating</option>
+          <option value="5">5 stars</option>
+          <option value="4">4 stars</option>
+          <option value="3">3 stars</option>
+          <option value="2">2 stars</option>
+          <option value="1">1 star</option>
+        </select>
+        <label for="product">Product:</label>
+        <select id="product" name="product" required>
+          <option value="">Select a Product</option>
+          <option value="jorts">Jorts</option>
+          <option value="croc_phone">Croc Phone</option>
+          <option value="scooter">Anti-tank Scooter</option>
+        </select>
+        <label for="review">Review:</label>
+        <textarea id="review" name="review" required></textarea>
+      </fieldset>
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </div>
+</body>
+
+</html>
